@@ -3,7 +3,7 @@ public class RussianRouletteCookie {
     protected String powerUp;
     protected boolean poisonous;
     protected boolean sprinkles;
-    public static int hunger=0;
+    public static int hunger = 0;
 
     public RussianRouletteCookie(String flavor, String powerUp, boolean poisonous, boolean sprinkles){
         this.flavor = flavor;
@@ -54,6 +54,7 @@ public class RussianRouletteCookie {
         testCookie.makeNoise();
         System.out.println(testCookie);
         printHunger();
+
     }
 
 

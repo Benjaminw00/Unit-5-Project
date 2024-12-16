@@ -22,11 +22,20 @@ public class ZeroSugarRaisinWheatCookie extends RussianRouletteCookie {
         return "This is a " + flavor + " cookie with " + raisinCount + " raisins. Eat at your own risk...";
     }
 
+    public void eatCookie(){
+        hunger-=20;
+        System.out.println("You died a painful death");
+    }
+
     public static void main(String[] args){
         ZeroSugarRaisinWheatCookie testCookie = new ZeroSugarRaisinWheatCookie(5);
         System.out.println(testCookie);
         testCookie.makeNoise();
         testCookie.setRaisinCount(4);
         System.out.println(testCookie);
+        testCookie.eatCookie();
     }
+
+
+
 }
