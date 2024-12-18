@@ -23,12 +23,13 @@ public class Baker {
                 System.out.println(newCookie);
                 System.out.println("What do you want to do: \"eat\" or \"hear\"?");
                 String answer = scanner.nextLine();
-                while (!(answer.equals("eat")) && !(answer.equals("hear"))) {
-                    System.out.println("Answer with \"eat\" or \"hear\"");
-                    answer = scanner.nextLine();
-                }
-                if (answer.equals("hear")) {
-                    while (answer.equals("hear")){
+
+                while (!(answer.equals("eat"))) {
+                    while (!(answer.equals("eat")) && !(answer.equals("hear"))) {
+                        System.out.println("Answer with \"eat\" or \"hear\"");
+                        answer = scanner.nextLine();
+                    }
+                    if (answer.equals("hear")) {
                         newCookie.makeNoise();
                         System.out.println("What do you want to do: \"eat\" or \"hear\"?");
                         answer = scanner.nextLine();
@@ -39,7 +40,6 @@ public class Baker {
                     System.out.println("Would you like to start again? \"yes\" or \"no\"");
                     yesOrNo = scanner.nextLine();
                 }
-
             }
 
             if (number.equals("2")) {
@@ -47,13 +47,12 @@ public class Baker {
                 System.out.println(newCookie);
                 System.out.println("What do you want to do: \"eat\" or \"hear\"?");
                 String answer = scanner.nextLine();
-                while (!(answer.equals("eat")) && !(answer.equals("hear"))) {
-
-                    System.out.println("Answer with \"eat\" or \"hear\"");
-                    answer = scanner.nextLine();
-                }
-                if (answer.equals("hear")) {
-                    while (answer.equals("hear")){
+                while (!(answer.equals("eat"))) {
+                    while (!(answer.equals("eat")) && !(answer.equals("hear"))) {
+                        System.out.println("Answer with \"eat\" or \"hear\"");
+                        answer = scanner.nextLine();
+                    }
+                    if (answer.equals("hear")) {
                         newCookie.makeNoise();
                         System.out.println("What do you want to do: \"eat\" or \"hear\"?");
                         answer = scanner.nextLine();
