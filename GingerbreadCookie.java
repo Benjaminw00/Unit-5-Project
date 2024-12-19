@@ -1,6 +1,8 @@
 public class GingerbreadCookie extends RussianRouletteCookie{
+    //custom attribute for GingerbreadCookies
     private int christmasEnergy;
 
+    //constructor using the special attribute
     public GingerbreadCookie(int christmasEnergy){
         super("Gingerbread cookie", "turns you into Santa", false, true);
         this.christmasEnergy = christmasEnergy;
@@ -12,8 +14,7 @@ public class GingerbreadCookie extends RussianRouletteCookie{
         this.christmasEnergy = christmasEnergy;
     }
 
-    //extra methods
-
+    //extra methods/polymorphic methods
     public void makeNoise(){
         System.out.println("hohoho");
     }
@@ -27,6 +28,7 @@ public class GingerbreadCookie extends RussianRouletteCookie{
         System.out.println("You're santa now. You win!");
     }
 
+    //testing environment
     public static void main(String[] args){
         GingerbreadCookie testCookie = new GingerbreadCookie(200);
         System.out.println(testCookie);

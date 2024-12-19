@@ -1,6 +1,8 @@
 public class ZeroSugarRaisinWheatCookie extends RussianRouletteCookie {
+    //special attributes for ZeroSugarRaisinWheatCookies
     private int raisinCount;
 
+    //special constructor using raisinCount
     public ZeroSugarRaisinWheatCookie(int raisinCount){
         super("Zero-sugar raisin wheat cookie", "painfully slow death", true, false);
         this.raisinCount = raisinCount;
@@ -12,8 +14,7 @@ public class ZeroSugarRaisinWheatCookie extends RussianRouletteCookie {
         this.raisinCount = raisinCount;
     }
 
-    //extra methods
-
+    //extra methods/Polymorphic methods
     public void makeNoise(){
         System.out.println("*the cookies dryly groans in agony*");
     }
@@ -27,6 +28,7 @@ public class ZeroSugarRaisinWheatCookie extends RussianRouletteCookie {
         System.out.println("You died a painful death");
     }
 
+    //testing environment
     public static void main(String[] args){
         ZeroSugarRaisinWheatCookie testCookie = new ZeroSugarRaisinWheatCookie(5);
         System.out.println(testCookie);

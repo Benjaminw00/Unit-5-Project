@@ -5,6 +5,7 @@ public class RussianRouletteCookie {
     protected boolean sprinkles;
     public static int hunger = 0;
 
+    //constructor
     public RussianRouletteCookie(String flavor, String powerUp, boolean poisonous, boolean sprinkles){
         this.flavor = flavor;
         this.powerUp = powerUp;
@@ -13,6 +14,7 @@ public class RussianRouletteCookie {
         hunger += 10; //more hungry everytime we eat a cookie
     }
 
+    //no parameter
     public RussianRouletteCookie(){
     }
 
@@ -44,6 +46,7 @@ public class RussianRouletteCookie {
         return "This is a " + flavor + " cookie. Eat at your own risk...";
     }
 
+    //static method for all cookies
     public static void printHunger(){
         System.out.println("Your current hunger level is at " + hunger + ". MORE COOKIESS!!!!");
     }
